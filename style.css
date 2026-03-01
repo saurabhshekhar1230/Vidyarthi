@@ -858,6 +858,59 @@ img {
     line-height: 1.8;
 }
 
+/* Trusted Brands Experience */
+.brands-experience {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.brands-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.brands-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.brand-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--white);
+    padding: 16px 32px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    border: 2px solid rgba(37, 99, 235, 0.1);
+    transition: var(--transition);
+}
+
+.brand-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.brand-item i {
+    font-size: 1.75rem;
+    color: var(--primary);
+}
+
+.brand-item span {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
 /* Faculties Section */
 .faculties-section {
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
@@ -1114,6 +1167,24 @@ img {
     color: var(--accent);
     font-size: 1rem;
     flex-shrink: 0;
+}
+
+.founder-highlights li i.fa-star {
+    color: #fbbf24;
+    font-size: 0.875rem;
+}
+
+.founder-highlights li strong {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* Brand Highlight for Aakash & BYJU'S */
+.founder-highlights li:has(strong) {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(249, 115, 22, 0.05) 100%);
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    margin: 0 -12px;
 }
 
 /* Founder Social Connect */
@@ -1883,6 +1954,22 @@ img {
     
     .category-title {
         font-size: 1.25rem;
+    }
+    
+    .brands-logos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .brand-item {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    .founder-highlights li:has(strong) {
+        margin: 0;
     }
     
     .testimonials-grid {
