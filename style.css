@@ -723,12 +723,20 @@ img {
     background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
 }
 
+.course-icon.green {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
 .course-card.science-batch {
     border: 2px solid #8b5cf6;
 }
 
 .course-card.jee-batch {
     border: 2px solid #ef4444;
+}
+
+.course-card.neet-batch {
+    border: 2px solid #10b981;
 }
 
 .course-header h3 {
@@ -1467,6 +1475,15 @@ img {
     transform: translateX(10px);
 }
 
+.contact-card.whatsapp-group .contact-icon {
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+}
+
+.contact-card.whatsapp-group a {
+    color: #25d366;
+    font-weight: 700;
+}
+
 .contact-icon {
     width: 60px;
     height: 60px;
@@ -1631,6 +1648,73 @@ img {
 .response-time i {
     color: var(--accent);
     margin-right: 6px;
+}
+
+/* ============================================
+   WhatsApp Group Section
+   ============================================ */
+.whatsapp-group-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border-top: 1px solid rgba(37, 211, 102, 0.1);
+}
+
+.whatsapp-group-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.whatsapp-group-icon {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    font-size: 3rem;
+    color: var(--white);
+    box-shadow: 0 10px 40px rgba(37, 211, 102, 0.3);
+    animation: whatsapp-pulse 2s infinite;
+}
+
+.whatsapp-group-content h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.whatsapp-group-content p {
+    font-size: 1.125rem;
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.btn-whatsapp-group {
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    color: var(--white);
+    padding: 20px 48px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-whatsapp-group:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
+}
+
+.btn-whatsapp-group i {
+    font-size: 1.5rem;
 }
 
 /* ============================================
@@ -1954,6 +2038,31 @@ img {
     
     .category-title {
         font-size: 1.25rem;
+    }
+    
+    .whatsapp-group-section {
+        padding: 60px 20px;
+    }
+    
+    .whatsapp-group-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .whatsapp-group-content p {
+        font-size: 1rem;
+    }
+    
+    .btn-whatsapp-group {
+        padding: 16px 32px;
+        font-size: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .whatsapp-group-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2.25rem;
     }
     
     .brands-logos {
