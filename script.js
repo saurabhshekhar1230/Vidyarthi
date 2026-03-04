@@ -184,6 +184,17 @@ function initMobileMenu() {
                 document.body.style.overflow = '';
             });
         });
+        
+        // Mobile dropdown toggle
+        mobileNavContainer.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+            if (toggle) {
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                });
+            }
+        });
     }
 }
 
