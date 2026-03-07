@@ -307,6 +307,27 @@
     position: relative;
 }
 
+/* Course AI Images */
+.course-ai-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.ai-generated-img {
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    transition: var(--transition);
+}
+
+.ai-generated-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+}
+
 /* Course Illustrations */
 .course-illustration {
     display: flex;
@@ -1006,6 +1027,11 @@
     
     .rocket-emoji, .target-emoji {
         font-size: 2rem;
+    }
+    
+    .ai-generated-img {
+        width: 100%;
+        border-radius: var(--radius-lg);
     }
     .btn-demo {
         width: 100%;
