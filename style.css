@@ -341,6 +341,90 @@ img {
     color: var(--secondary);
 }
 
+/* Vidyarthi Photo Section */
+.vidyarthi-photo-section {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vidyarthi-main-photo {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    border: 6px solid var(--white);
+    transition: var(--transition);
+    object-fit: cover;
+}
+
+.vidyarthi-main-photo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Vedika Full Width Photo Section */
+.vedika-photo-section {
+    width: 100%;
+    padding: 40px 0;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.03), rgba(249, 115, 22, 0.03));
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.vedika-full-width-photo {
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+    object-fit: cover;
+    display: block;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    border: 8px solid var(--white);
+    transition: var(--transition);
+}
+
+.vedika-full-width-photo:hover {
+    transform: scale(1.01);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.3);
+}
+
+/* Testimonial Photo Banner */
+.testimonial-photo-banner {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(249, 115, 22, 0.05));
+    border-radius: var(--radius-lg);
+    border: 3px solid rgba(37, 99, 235, 0.15);
+}
+
+.testimonial-main-photo {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    border: 6px solid var(--white);
+    transition: var(--transition);
+    object-fit: cover;
+}
+
+.testimonial-main-photo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+}
+
 /* Hero Philosophy Quote */
 .hero-philosophy {
     margin-bottom: 32px;
@@ -2372,6 +2456,24 @@ img {
 @media (max-width: 768px) {
     .hero {
         padding: 100px 0 60px;
+    }
+    
+    .vedika-full-width-photo {
+        max-height: 500px;
+        border-width: 4px;
+    }
+    
+    .vedika-photo-section {
+        padding: 30px 0;
+    }
+    
+    .testimonial-main-photo {
+        width: 100%;
+        max-height: 500px;
+    }
+    
+    .testimonial-photo-banner {
+        padding: 20px;
     }
     
     .hero-title {
