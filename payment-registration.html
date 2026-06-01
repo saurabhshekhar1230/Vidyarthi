@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment & Registration - Vidyarthi Studio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="courses-simple.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;700&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html#home" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Vidyarthi Studio</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html#faq-section" class="nav-link">FAQ</a></li>
+            </ul>
+            <a href="https://wa.me/917693806696" target="_blank" class="nav-cta">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <main class="payment-register-page">
+        <section class="payment-register-hero">
+            <div class="container">
+                <div class="payment-register-hero-content">
+                    <span class="payment-register-badge">
+                        <i class="fas fa-lock"></i> Secure enrollment step
+                    </span>
+                    <h1>Payment & Registration</h1>
+                    <p>Complete your enrollment in three simple steps: Make Payment → Fill Registration Form → Confirm on WhatsApp. ✅</p>
+                    <p>Important: Please attach the payment screenshot while confirming on WhatsApp. This helps our team verify your payment and process your registration quickly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment-official-note">
+            <div class="container">
+                <div class="official-payment-card">
+                    <div class="official-payment-icon">
+                        <i class="fas fa-building-columns"></i>
+                    </div>
+                    <div>
+                        <h2>Official Payment Account</h2>
+                        <p>At present, course fee payments are being collected through the Founder's UPI/Bank Account. This is the official payment account authorized by Vidyarthi Studio for enrollment and fee collection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment-register-content">
+            <div class="container">
+                <div class="payment-register-grid">
+                    <div class="payment-register-panel payment-details-panel">
+                        <div class="payment-register-panel-icon">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h2>Payment Details</h2>
+                        <p>Scan this QR code with any UPI app or copy the UPI ID below to complete your course fee payment.</p>
+                        <div class="payment-qr-frame">
+                            <img src="images/payment-qr-saurabh-shekhar.jpeg" alt="Saurabh Shekhar UPI QR code for Vidyarthi Studio payment">
+                        </div>
+                        <div class="upi-copy-box">
+                            <span>UPI ID</span>
+                            <strong id="upi-id">saurabhmishra1230@okhdfcbank</strong>
+                            <button type="button" class="copy-upi-btn" data-copy-upi="saurabhmishra1230@okhdfcbank">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="payment-register-panel registration-form-panel">
+                        <div class="payment-register-panel-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h2>Registration Form</h2>
+                        <p>After payment, fill the correct registration form according to the course selected.</p>
+                        <div class="registration-buttons">
+                            <a href="https://forms.gle/fwD91ZpCVzwqsxgL6" target="_blank" rel="noopener" class="btn btn-registration-form">
+                                <i class="fas fa-file-signature"></i> Vedic Maths Workshop Form
+                            </a>
+                            <a href="https://forms.gle/nrz6voMteMAfpTXW9" target="_blank" rel="noopener" class="btn btn-registration-form secondary">
+                                <i class="fas fa-file-lines"></i> Other Courses Form
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="payment-register-panel whatsapp-confirm-panel">
+                        <div class="payment-register-panel-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h2>WhatsApp Confirmation</h2>
+                        <p>Fees payment aur registration form fill karne ke baad parents ko WhatsApp confirmation button par click zaroor karna hai, taki confirmation message directly Vidyarthi Studio team tak pahunch jaaye.</p>
+                        <a href="https://wa.me/917693806696?text=Hello%20Vidyarthi%20Studio%20Team%2C%0D%0A%0D%0A%E2%9C%85%20Payment%20Completed%0D%0ACourse%20name%3A_____________%0D%0A%0D%0AParent%20Name%3A%20__________%0D%0A%0D%0AStudent%20Name%3A%20__________%0D%0A%0D%0AClass%3A%20__________%0D%0A%0D%0A%F0%9F%93%B8%20I%20have%20attached%20the%20payment%20screenshot.%0D%0A%0D%0AKindly%20verify%20my%20payment%20and%20confirm%20my%20registration.%0D%0A%0D%0AThank%20You." target="_blank" rel="noopener" class="btn btn-whatsapp-large">
+                            <i class="fab fa-whatsapp"></i> Confirm on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer payment-register-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vidyarthi Studio. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> for students</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/917693806696" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initCounters();
     initMobileMenu();
     initFAQ();
+    initUpiCopy();
 });
 
 // ============================================
@@ -458,6 +459,39 @@ function initFAQ() {
             
             // Toggle current item
             item.classList.toggle('active');
+        });
+    });
+}
+
+// ============================================
+// Payment UPI Copy
+// ============================================
+function initUpiCopy() {
+    const copyButtons = document.querySelectorAll('[data-copy-upi]');
+
+    copyButtons.forEach(button => {
+        const originalText = button.innerHTML;
+
+        button.addEventListener('click', async () => {
+            const upiId = button.getAttribute('data-copy-upi');
+
+            try {
+                await navigator.clipboard.writeText(upiId);
+                button.innerHTML = '<i class="fas fa-check"></i> Copied';
+            } catch (error) {
+                const upiText = document.getElementById('upi-id');
+                if (upiText) {
+                    const range = document.createRange();
+                    range.selectNodeContents(upiText);
+                    window.getSelection().removeAllRanges();
+                    window.getSelection().addRange(range);
+                }
+                button.innerHTML = '<i class="fas fa-check"></i> Selected';
+            }
+
+            setTimeout(() => {
+                button.innerHTML = originalText;
+            }, 1800);
         });
     });
 }
